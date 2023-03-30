@@ -5,7 +5,7 @@ import Topics from '../Topics/Topics';
 const Home = () => {
     const items = useLoaderData();
     const topics = items.data
-    console.log(topics);
+    // console.log(topics);
     
     return (
         <div >
