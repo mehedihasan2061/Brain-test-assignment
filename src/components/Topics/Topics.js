@@ -12,10 +12,8 @@ const Topics = ({ topic }) => {
           <div className="card-body">
             <div className="flex items-center ">
               <h2 className="card-title">{name}</h2>
-              <p>{total}</p>
-              {/* <div className="card-actions justify-end"> */}
-              <button className="btn btn-primary">Start Practice</button>
-              {/* </div> */}
+              <p>{total}</p>       
+              <button className="btn btn-primary">Start Practice</button>            
             </div>
           </div>
         </div>
