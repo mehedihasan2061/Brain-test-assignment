@@ -12,7 +12,7 @@ const Statistics = () => {
     return (
       <div className="justify-center">
         <h2 className="text-xl font-bold mt-6">Quiz Analysis</h2>
-        <ResponsiveContainer width='80%' height={400}>
+        <ResponsiveContainer width={700} height={400}>
           <AreaChart
             data={statistics}
             margin={{ top: 30, right: 50, left: 0, bottom: 0 }}
