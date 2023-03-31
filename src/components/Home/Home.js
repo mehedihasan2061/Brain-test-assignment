@@ -11,7 +11,7 @@ const Home = () => {
         <div >
             <div className='grid grid-cols-4 gap-5 m-5 '>
                  {
-                topics.map(topic => <Topics key={topic.id} topic={topic}></Topics>)
+                topics.map(topic => <Topics key={topic.id} quiz={topic}></Topics>)
             }
            </div>
         </div>
