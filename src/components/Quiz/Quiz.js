@@ -8,15 +8,18 @@ const Quiz = () => {
     const { name, questions,total } = items;
     
     return (
-        <div>
-            <h2 className='text-primary text-xl'>{name} Quiz Part</h2>
-            <h2 >Total Question: {total}</h2>
-            
-                {
-                questions.map(totalquiz => <QuizOption totalquiz={totalquiz}></QuizOption>)
-           }
-           
+      <div>
+        <div className="m-8 bg-slate-200 p-4 rounded-xl">
+          <h2 className="text-primary font-bold text-4xl font-mono my-4">
+            {name} Quiz Part
+          </h2>
+          <h2 className="font-semibold">Total Question: {total}</h2>
         </div>
+
+        {questions.map((totalquiz) => (
+          <QuizOption totalquiz={totalquiz}></QuizOption>
+        ))}
+      </div>
     );
 };
 
