@@ -5,7 +5,8 @@ import QuizOption from '../QuizOption/QuizOption';
 const Quiz = () => {
     const quiz = useLoaderData();
     const items = quiz.data
-    const { name, questions,total } = items;
+  const { name, questions, total } = items;
+  // console.log(items);
     
     return (
       <div>
@@ -15,9 +16,9 @@ const Quiz = () => {
           </h2>
           <h2 className="font-semibold">Total Question: {total}</h2>
         </div>
-
+       
         {questions.map((totalquiz) => (
-          <QuizOption totalquiz={totalquiz}></QuizOption>
+          <QuizOption key={totalquiz.id} totalquiz={totalquiz}></QuizOption>
         ))}
       </div>
     );

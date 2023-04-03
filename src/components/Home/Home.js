@@ -11,23 +11,23 @@ const Home = () => {
     
     return (
       <div>
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 items-center">
           <div className="m-8">
             <h2 className="font-mono text-4xl font-extrabold my-2 text-orange-600/75">
               Wellcome to Quiz Episod !!!
             </h2>
-            <h2 className='text-lg italic font-sans'>
+            <h2 className="text-lg italic font-sans">
               There are some quiz questions that need to be answered. Each
               question is numbered one,One quiz mark will be deducted for each
               wrong mark!!!
             </h2>
           </div>
-          <div className="w-">
+          <div className="">
             <Lottie animationData={Data} loop={true}></Lottie>
           </div>
         </div>
 
-        <div className="grid grid-cols-4 gap-5 m-5 ">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 m-5 ">
           {topics.map((topic) => (
             <Topics key={topic.id} quiz={topic}></Topics>
           ))}
