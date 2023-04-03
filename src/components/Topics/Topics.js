@@ -8,7 +8,7 @@ const Topics = ({ quiz }) => {
       <div>
         <div className="card card-compact  bg-base-100 shadow-xl">
           <figure>
-            <img className="h-60 w-52 bg-zinc-500 rounded-lg" src={logo} alt="Shoes" />
+            <img className="h-60 w-52 bg-zinc-500 rounded-lg " src={logo} alt="Shoes" />
           </figure>
           <div className="card-body">
             <div className="flex items-center ">

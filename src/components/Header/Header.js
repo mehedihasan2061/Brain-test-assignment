@@ -4,10 +4,13 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
       <div>
-        <div className="navbar bg-base-100 drop-shadow-xl my-5 ">
+        <div className="navbar bg-base-100 drop-shadow-xl  my-5 ">
           <div className="flex-1">
-            <Link to="/" className="btn btn-ghost normal-case text-xl">
-              daisyUI
+            <Link
+              to="/"
+              className="btn btn-ghost normal-case text-xl hover:text-purple-600 bg-yellow-500 text-white"
+            >
+              Quiz Test
             </Link>
           </div>
           <div className="flex-none">
